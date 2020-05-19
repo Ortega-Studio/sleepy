@@ -1,14 +1,4 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/JosefinSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Josefin Sans Thin";
-  src: url("../fonts/JosefinSans-Thin.ttf");
-}
-
-/* line 10, scss/sleepy.scss */
+/* line 1, scss/sleepy.scss */
 body {
   font-family: "Roboto", sans-serif;
   background-color: #000;
@@ -17,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* line 18, scss/sleepy.scss */
+/* line 9, scss/sleepy.scss */
 a,
 a:hover,
 a:visited,
@@ -26,7 +16,7 @@ a:active {
   text-decoration: none;
 }
 
-/* line 26, scss/sleepy.scss */
+/* line 17, scss/sleepy.scss */
 #container {
   width: 100%;
   height: 568px;
@@ -36,19 +26,19 @@ a:active {
   box-sizing: border-box;
 }
 
-/* line 35, scss/sleepy.scss */
+/* line 26, scss/sleepy.scss */
 #top {
   margin: 15px 0 0 0;
   width: 100%;
 }
 
-/* line 39, scss/sleepy.scss */
+/* line 30, scss/sleepy.scss */
 #top .line {
   width: 25%;
-  background: url("../img/line@2x.png") left center repeat-x;
+  background: url("../img/line-grey@2x.png") left center repeat-x;
 }
 
-/* line 44, scss/sleepy.scss */
+/* line 35, scss/sleepy.scss */
 #top .text {
   text-align: center;
   text-transform: uppercase;
@@ -60,7 +50,7 @@ a:active {
   font-weight: 100;
 }
 
-/* line 56, scss/sleepy.scss */
+/* line 47, scss/sleepy.scss */
 #currenttime {
   font-size: 60px;
   text-transform: uppercase;
@@ -70,7 +60,7 @@ a:active {
   padding: 0;
 }
 
-/* line 66, scss/sleepy.scss */
+/* line 57, scss/sleepy.scss */
 #timescontainer h2 {
   font-size: 16px;
   line-height: 16px;
@@ -84,12 +74,12 @@ a:active {
   margin: 0 0 15px 0;
 }
 
-/* line 80, scss/sleepy.scss */
+/* line 71, scss/sleepy.scss */
 #times {
   width: 100%;
 }
 
-/* line 83, scss/sleepy.scss */
+/* line 74, scss/sleepy.scss */
 #times .time-bit {
   font-size: 30px;
   text-align: center;
@@ -98,15 +88,15 @@ a:active {
   border-bottom: 1px solid #222;
 }
 
-/* line 110, scss/sleepy.scss */
+/* line 101, scss/sleepy.scss */
 #times .time-bit:nth-child(6) {
   border-bottom: 0;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 117, scss/sleepy.scss */
+  /* line 108, scss/sleepy.scss */
   #top .line {
-    background: url("../img/line@2x.png") left center repeat-x;
+    background: url("../img/line-grey@2x.png") left center repeat-x;
   }
 }
 

@@ -1,12 +1,3 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/JosefinSans-Regular.ttf");
-}
-@font-face {
-  font-family: "Josefin Sans Thin";
-  src: url("../fonts/JosefinSans-Thin.ttf");
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #000;
@@ -38,7 +29,7 @@ a:active {
 
   .line {
     width: 25%;
-    background: url("../img/line@2x.png") left center repeat-x;
+    background: url("../img/line-grey@2x.png") left center repeat-x;
   }
 
   .text {
@@ -115,6 +106,6 @@ a:active {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #top .line {
-    background: url("../img/line@2x.png") left center repeat-x;
+    background: url("../img/line-grey@2x.png") left center repeat-x;
   }
 }
