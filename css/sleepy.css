@@ -1,151 +1,113 @@
-@font-face { font-family: "Josefin Sans"; src: url('../fonts/JosefinSans-Regular.ttf'); }
-@font-face { font-family: "Josefin Sans Thin";  src: url('../fonts/JosefinSans-Thin.ttf'); }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/JosefinSans-Regular.ttf");
+}
 
+@font-face {
+  font-family: "Josefin Sans Thin";
+  src: url("../fonts/JosefinSans-Thin.ttf");
+}
+
+/* line 10, scss/sleepy.scss */
 body {
-	font-family: "Josefin Sans Thin", sans-serif;
-	background: #232323 url('../img/tile.png');
-	color: #fff;
-	margin: 0;
-	padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
+/* line 18, scss/sleepy.scss */
+a,
+a:hover,
+a:visited,
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 26, scss/sleepy.scss */
 #container {
-	width: 100%;
-	height: 568px;
-	margin: 0 auto;
+  width: 100%;
+  height: 568px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-h2 {
-	font-size: 14px;
-	line-height: 14px;
-	text-align: center;
-	margin: 0;
-	font-weight: normal;
-	background: url('../img/trans.png');
-	border-top: 1px solid #323232;
-	padding: 15px;
-	font-family: "Josefin Sans", sans-serif;
-}
-
-a, a:hover, 
-a:visited, 
-a:active { 
-	color: #fff; 
-	text-decoration: none; 
-}
-
+/* line 35, scss/sleepy.scss */
 #top {
-	width: 100%;
-	margin: 35px 0 0 0;
+  margin: 15px 0 0 0;
+  width: 100%;
 }
 
+/* line 39, scss/sleepy.scss */
 #top .line {
-	width: 25%;
-	background: url('../img/line@2x.png') left center repeat-x;
+  width: 25%;
+  background: url("../img/line@2x.png") left center repeat-x;
 }
 
+/* line 44, scss/sleepy.scss */
 #top .text {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 14px;
-	line-height: 14px;
-	width: 50%;
-	font-family: "Josefin Sans", sans-serif;
-	vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
+  font-weight: 100;
 }
 
+/* line 56, scss/sleepy.scss */
 #currenttime {
-	font-size: 60px;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: normal;
-	margin: 20px 0 15px 0;
-	padding: 0;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  margin: 20px 0 30px 0;
+  padding: 0;
 }
 
-#timescontainer {
-	width: 100%;
+/* line 66, scss/sleepy.scss */
+#timescontainer h2 {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  background: #185acb;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 15px 0;
 }
 
+/* line 80, scss/sleepy.scss */
 #times {
-	width: 100%;
-	border-spacing:0;
-  border-collapse:collapse;
+  width: 100%;
 }
 
-#times td {
-	font-size: 34px;
-	text-align: center;
-	vertical-align: center;
+/* line 83, scss/sleepy.scss */
+#times .time-bit {
+  font-size: 30px;
+  text-align: center;
+  vertical-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #222;
 }
 
-#times td a { 
-	display: block; 
-	padding: 10px; 
-	text-shadow: 0px 1px 1px black;
+/* line 110, scss/sleepy.scss */
+#times .time-bit:nth-child(6) {
+  border-bottom: 0;
 }
 
-#times tr:nth-child(1),
-#colorbar .color1 {
-	background: #122b41;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 117, scss/sleepy.scss */
+  #top .line {
+    background: url("../img/line@2x.png") left center repeat-x;
+  }
 }
 
-#times tr:nth-child(2),
-#colorbar .color2 {
-	background: #1e3951;
-}
-
-#times tr:nth-child(3),
-#colorbar .color3 {
-	background: #2a4760;
-}
-
-#times tr:nth-child(4),
-#colorbar .color4 {
-	background: #365670;
-}
-
-#times tr:nth-child(5),
-#colorbar .color5 {
-	background: #42647f;
-}
-
-#times tr:nth-child(6),
-#colorbar .color6 {
-	background: #4e728f;
-}
-
-#colorbar {
-	width: 100%;
-	margin: 0;
-	padding: 0 0 15px 0;
-	list-style: none;
-}
-
-#colorbar li {
-	list-style: none;
-	display: block;
-	float: left;
-	height: 20px;
-	width: 20%;
-}
-
-#colorbar td.color5 {
-	width: 52px;
-}
-
-#colorbar td.color6 {
-	width: 52px;
-}
-
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-	body {
-		background: #232323 url('../img/tile@2x.png');
-	}
-	
-	#top .line {
-		background: url('../img/line@2x.png') left center repeat-x;
-	}
-}
+/*# sourceMappingURL=sleepy.css.map */
