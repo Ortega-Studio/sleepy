@@ -1,5 +1,6 @@
 {
   "identifier" : "6266B868-0665-4712-9AE6-5A17FC378A97",
+  "remotePath" : "\/home\/um_me\/um-me.com\/sleepy",
   "server" : "Umbrella Media",
-  "usesPublishing" : false
+  "usesPublishing" : true
 }

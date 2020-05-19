@@ -107,6 +107,10 @@
               sleep cycles.
             </p>
             <p>A good night's sleep consists of 5-6 complete sleep cycles.</p>
+            
+            <p>To enjoy a full screen experience and ease of use save this web app to your device's home screen.</p>
+            
+            <p>Sleepy was created by <a href="http://umbrella.media">Umbrella Media</a> in Austin Texas.</p>
 
             <p><i class="fal fa-snooze"></i> Sweet dreams!</p>
           </div>
