@@ -1,12 +1,13 @@
 $black: #000;
 $grey: #222;
+$light-grey: #aaa;
 $white: #fff;
 $blue: #185acb;
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: $black;
-  color: $white;
+  background-color: $white;
+  color: $black;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +16,7 @@ a,
 a:hover,
 a:visited,
 a:active {
-  color: $white;
+  color: $black;
   text-decoration: none;
 }
 
@@ -43,7 +44,7 @@ a:active {
     line-height: 14px;
     font-family: "Roboto", sans-serif;
     vertical-align: middle;
-    font-weight: 100;
+    font-weight: 400;
   }
 }
 
@@ -51,7 +52,7 @@ a:active {
   font-size: 60px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 100;
+  font-weight: 400;
   margin: 20px 0 30px 0;
   padding: 0;
 }
@@ -62,8 +63,9 @@ a:active {
   text-align: center;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 400;
   background: $blue;
+  color: $white;
   padding: 15px;
   font-family: "Roboto", sans-serif;
   margin: 0 0 15px 0;
@@ -94,6 +96,7 @@ a:active {
   button {
     color: #777;
 
+    &:active,
     &:hover {
       text-decoration: none;
     }
@@ -107,18 +110,18 @@ a:active {
     width: 100%;
     height: 100%;
     margin: 0;
-
     max-width: 100%;
 
     .modal-content {
       height: auto;
       min-height: 100%;
       border-radius: 0;
-      background-color: $black;
+      background-color: $white;
       padding: 15px;
 
       .modal-header {
         background-color: $blue;
+        color: $white;
         border-radius: 10px;
         border-bottom: 0;
         padding: 15px;
@@ -131,6 +134,62 @@ a:active {
           padding-top: 20px;
           opacity: 1;
           font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $black;
+    color: $white;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: $white;
+  }
+
+  #top {
+    .line {
+      .text {
+        font-weight: 100;
+      }
+    }
+  }
+
+  #timescontainerheader {
+    font-weight: 100;
+  }
+
+  #currenttime {
+    font-weight: 100;
+  }
+
+  #timescontainer {
+    #times {
+      width: 100%;
+
+      .time-bit {
+        border-bottom: 1px solid $grey;
+      }
+    }
+  }
+
+  .modal {
+    .modal-dialog {
+      .modal-content {
+        background-color: $black;
+
+        .modal-header {
+          color: $white;
+
+          .close {
+            color: $white;
+          }
         }
       }
     }
