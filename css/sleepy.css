@@ -1,0 +1,151 @@
+@font-face { font-family: "Josefin Sans"; src: url('../fonts/JosefinSans-Regular.ttf'); }
+@font-face { font-family: "Josefin Sans Thin";  src: url('../fonts/JosefinSans-Thin.ttf'); }
+
+body {
+	font-family: "Josefin Sans Thin", sans-serif;
+	background: #232323 url('../img/tile.png');
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 100%;
+	height: 568px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	margin: 0;
+	font-weight: normal;
+	background: url('../img/trans.png');
+	border-top: 1px solid #323232;
+	padding: 15px;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+a, a:hover, 
+a:visited, 
+a:active { 
+	color: #fff; 
+	text-decoration: none; 
+}
+
+#top {
+	width: 100%;
+	margin: 35px 0 0 0;
+}
+
+#top .line {
+	width: 25%;
+	background: url('../img/line@2x.png') left center repeat-x;
+}
+
+#top .text {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 14px;
+	width: 50%;
+	font-family: "Josefin Sans", sans-serif;
+	vertical-align: middle;
+}
+
+#currenttime {
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	margin: 20px 0 15px 0;
+	padding: 0;
+}
+
+#timescontainer {
+	width: 100%;
+}
+
+#times {
+	width: 100%;
+	border-spacing:0;
+  border-collapse:collapse;
+}
+
+#times td {
+	font-size: 34px;
+	text-align: center;
+	vertical-align: center;
+}
+
+#times td a { 
+	display: block; 
+	padding: 10px; 
+	text-shadow: 0px 1px 1px black;
+}
+
+#times tr:nth-child(1),
+#colorbar .color1 {
+	background: #122b41;
+}
+
+#times tr:nth-child(2),
+#colorbar .color2 {
+	background: #1e3951;
+}
+
+#times tr:nth-child(3),
+#colorbar .color3 {
+	background: #2a4760;
+}
+
+#times tr:nth-child(4),
+#colorbar .color4 {
+	background: #365670;
+}
+
+#times tr:nth-child(5),
+#colorbar .color5 {
+	background: #42647f;
+}
+
+#times tr:nth-child(6),
+#colorbar .color6 {
+	background: #4e728f;
+}
+
+#colorbar {
+	width: 100%;
+	margin: 0;
+	padding: 0 0 15px 0;
+	list-style: none;
+}
+
+#colorbar li {
+	list-style: none;
+	display: block;
+	float: left;
+	height: 20px;
+	width: 20%;
+}
+
+#colorbar td.color5 {
+	width: 52px;
+}
+
+#colorbar td.color6 {
+	width: 52px;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+	body {
+		background: #232323 url('../img/tile@2x.png');
+	}
+	
+	#top .line {
+		background: url('../img/line@2x.png') left center repeat-x;
+	}
+}
