@@ -1,0 +1,4 @@
+name: sleepy
+recipe: lamp
+config:
+  webroot: .

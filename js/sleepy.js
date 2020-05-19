@@ -34,7 +34,7 @@ function sleepback(hr, min, an) {
  * time + :14 + (multiples of 90 mins)
  */
 function knockout(rightnow) {
-  var r = '<h2>Optimum Wake Times Are:</h2><div id="times">'; // return string
+  var r = '<div id="times">'; // return string
   var hr = rightnow.getHours();
   var dhr = 0; // separate variable to display because (24 hr clock)
   var ap = "";

@@ -1,4 +1,4 @@
-/* line 1, scss/sleepy.scss */
+/* line 6, scss/sleepy.scss */
 body {
   font-family: "Roboto", sans-serif;
   background-color: #000;
@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* line 9, scss/sleepy.scss */
+/* line 14, scss/sleepy.scss */
 a,
 a:hover,
 a:visited,
@@ -16,7 +16,7 @@ a:active {
   text-decoration: none;
 }
 
-/* line 17, scss/sleepy.scss */
+/* line 22, scss/sleepy.scss */
 #container {
   width: 100%;
   height: 568px;
@@ -26,31 +26,29 @@ a:active {
   box-sizing: border-box;
 }
 
-/* line 26, scss/sleepy.scss */
+/* line 31, scss/sleepy.scss */
 #top {
   margin: 15px 0 0 0;
   width: 100%;
 }
 
-/* line 30, scss/sleepy.scss */
+/* line 35, scss/sleepy.scss */
 #top .line {
-  width: 25%;
-  background: url("../img/line-grey@2x.png") left center repeat-x;
+  background: url("../img/line-grey@2x.png?12") left center repeat-x;
 }
 
-/* line 35, scss/sleepy.scss */
+/* line 39, scss/sleepy.scss */
 #top .text {
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  width: 50%;
   font-family: "Roboto", sans-serif;
   vertical-align: middle;
   font-weight: 100;
 }
 
-/* line 47, scss/sleepy.scss */
+/* line 50, scss/sleepy.scss */
 #currenttime {
   font-size: 60px;
   text-transform: uppercase;
@@ -60,8 +58,8 @@ a:active {
   padding: 0;
 }
 
-/* line 57, scss/sleepy.scss */
-#timescontainer h2 {
+/* line 59, scss/sleepy.scss */
+#timescontainerheader {
   font-size: 16px;
   line-height: 16px;
   text-align: center;
@@ -72,15 +70,16 @@ a:active {
   padding: 15px;
   font-family: "Roboto", sans-serif;
   margin: 0 0 15px 0;
-}
-
-/* line 71, scss/sleepy.scss */
-#times {
-  width: 100%;
+  border-radius: 10px;
 }
 
 /* line 74, scss/sleepy.scss */
-#times .time-bit {
+#timescontainer #times {
+  width: 100%;
+}
+
+/* line 77, scss/sleepy.scss */
+#timescontainer #times .time-bit {
   font-size: 30px;
   text-align: center;
   vertical-align: center;
@@ -88,16 +87,66 @@ a:active {
   border-bottom: 1px solid #222;
 }
 
-/* line 101, scss/sleepy.scss */
-#times .time-bit:nth-child(6) {
+/* line 84, scss/sleepy.scss */
+#timescontainer #times .time-bit:nth-child(6) {
   border-bottom: 0;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 108, scss/sleepy.scss */
-  #top .line {
-    background: url("../img/line-grey@2x.png") left center repeat-x;
-  }
+/* line 91, scss/sleepy.scss */
+#how-does-this-work {
+  text-align: center;
+  padding: 0 0 15px 0;
+}
+
+/* line 94, scss/sleepy.scss */
+#how-does-this-work button {
+  color: #777;
+}
+
+/* line 97, scss/sleepy.scss */
+#how-does-this-work button:hover {
+  text-decoration: none;
+}
+
+/* line 103, scss/sleepy.scss */
+.modal {
+  padding-right: 0 !important;
+}
+
+/* line 106, scss/sleepy.scss */
+.modal .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 113, scss/sleepy.scss */
+.modal .modal-dialog .modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  background-color: #000;
+  padding: 15px;
+}
+
+/* line 120, scss/sleepy.scss */
+.modal .modal-dialog .modal-content .modal-header {
+  background-color: #185acb;
+  border-radius: 10px;
+  border-bottom: 0;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+/* line 129, scss/sleepy.scss */
+.modal .modal-dialog .modal-content .modal-header .close {
+  color: #fff;
+  padding-top: 20px;
+  opacity: 1;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=sleepy.css.map */
