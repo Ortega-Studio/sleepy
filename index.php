@@ -12,10 +12,10 @@
     </script>
 
     <meta charset="utf-8" />
-    <title>💤 - Sleep your best sleep</title>
+    <title>😴💤 - Sleep your best sleep</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="💤">
+    <meta name="apple-mobile-web-app-title" content="😴💤">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -110,7 +110,7 @@
             
             <p>Sleepy was created by <a href="http://umbrella.media">Umbrella Media</a> in Austin Texas.</p>
 
-            <p>💤😴 Sweet dreams!</p>
+            <p>😴💤 Sweet dreams!</p>
           </div>
         </div>
       </div>
