@@ -30,7 +30,7 @@ a:active {
 }
 
 #top {
-  margin: 15px 0 0 0;
+  margin: 30px 0 0 0;
   width: 100%;
 
   .line {
@@ -95,6 +95,7 @@ a:active {
   padding: 0 0 15px 0;
   button {
     color: #777;
+    font-weight: 400;
 
     &:active,
     &:hover {
@@ -176,6 +177,12 @@ a:active {
       .time-bit {
         border-bottom: 1px solid $grey;
       }
+    }
+  }
+
+  #how-does-this-work {
+    button {
+      font-weight: 100;
     }
   }
 
