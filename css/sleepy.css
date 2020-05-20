@@ -203,6 +203,10 @@ a:active {
   .modal .modal-dialog .modal-content .modal-header .close {
     color: #fff;
   }
+  /* line 205, scss/sleepy.scss */
+  .modal .modal-dialog .modal-content .modal-body a {
+    color: #fff;
+  }
 }
 
 /*# sourceMappingURL=sleepy.css.map */
