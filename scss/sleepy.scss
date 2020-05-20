@@ -99,6 +99,7 @@ a:active {
     font-weight: 400;
     font-family: "Roboto", sans-serif;
 
+    &:focus,
     &:active,
     &:hover {
       text-decoration: none;

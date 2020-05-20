@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html class="" lang="en" dir="ltr">
+<html class="" lang="en" dir="ltr" manifest="manifest.appcache.php">
   <head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-13166425-2"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		
-		  gtag('config', 'UA-13166425-2');
-		</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-13166425-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-13166425-2');
+    </script>
 
     <meta charset="utf-8" />
     <title>💤 - Sleep your best sleep</title>
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="💤">
     <meta
       name="viewport"
@@ -27,8 +27,8 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link type="text/css" href="css/sleepy.css?<?php print rand(); ?>" rel="stylesheet" />		
-	  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-180x180.png" />
+    <link type="text/css" href="css/sleepy.css?v=<?php print rand(); ?>" rel="stylesheet" />		
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-180x180.png" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -48,7 +48,7 @@
       src="https://kit.fontawesome.com/d90e0198e0.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="js/sleepy.js?<?php print rand(); ?>"></script>
+    <script type="text/javascript" src="js/sleepy.js?v=<?php print rand(); ?>"></script>
   </head>
 
   <body>
@@ -60,7 +60,7 @@
       </div>
 
       <h1 id="currenttime"></h1>
-      <h2 id="timescontainerheader">Optimum Wake Times Are</h2>
+      <h2 id="timescontainerheader">Optimal Wake Times Are</h2>
       <div id="timescontainer">
         <div></div>
       </div>
@@ -110,7 +110,7 @@
             
             <p>Sleepy was created by <a href="http://umbrella.media">Umbrella Media</a> in Austin Texas.</p>
 
-            <p><i class="fal fa-snooze"></i> Sweet dreams!</p>
+            <p>💤😴 Sweet dreams!</p>
           </div>
         </div>
       </div>
