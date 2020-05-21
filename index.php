@@ -56,52 +56,20 @@
       <div id="sleep-times">
       
       <div class="top row">
-        <div class="col-3 line"><span></span></div>
-        <div class="col-6 text">What Time Do You Have to Wake Up?</div>
-        <div class="col-3 line"><span></span></div>
+        <div class="col-3 col-sm-4 line"><span></span></div>
+        <div class="col-6 col-sm-4 text">What Time Do You Have to Wake Up?</div>
+        <div class="col-3 col-sm-4 line"><span></span></div>
       </div>
       <form>
-        <select id="hour">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-          <option>11</option>
-          <option>12</option>
-        </select>
-        
-        <select id="minute">
-          <option value="0">00</option>
-          <option value="5">05</option>
-          <option value="10">10</option>
-          <option value="15">15</option>
-          <option value="">20</option>
-          <option value="">25</option>
-          <option value="30">30</option>
-          <option value="35">35</option>
-          <option value="40">40</option>
-          <option value="45">45</option>
-          <option value="50">50</option>
-          <option value="55">55</option>
-        </select>
-        
-        <select id="ampm">
-          <option>AM</option>
-          <option>PM</option>
-        </select>
+      <input type="time" value="<?php print date('G:i', time()); ?>">
+
       </form>
       </div>
       <div id="wake-times">
         <div class="top row">
-          <div class="col-3 line"><span></span></div>
-          <div class="col-6 text">It is currently</div>
-          <div class="col-3 line"><span></span></div>
+          <div class="col-3 col-sm-4 line"><span></span></div>
+          <div class="col-6 col-sm-4 text">It is currently</div>
+          <div class="col-3 col-sm-4 line"><span></span></div>
         </div>
   
         <h1 id="currenttime"></h1>
