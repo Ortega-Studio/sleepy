@@ -1,0 +1,200 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $white;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: $black;
+  text-decoration: none !important;
+}
+
+.large-header {
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  margin: 20px 0 30px 0;
+  padding: 0;
+}
+
+.section-header {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: $blue;
+  color: $white;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 15px 0;
+  border-radius: 10px;
+}
+
+.top {
+  margin: 30px 0 0 0;
+  width: 100%;
+
+  .line {
+    align-self: center;
+    &:before {
+      content: " ";
+      height: 0px;
+      border-bottom: 1px solid $grey;
+      display: block;
+    }
+  }
+
+  .text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+    vertical-align: middle;
+    font-weight: 400;
+  }
+}
+
+.times {
+  width: 100%;
+
+  .time-bit {
+    font-size: 30px;
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+    border-bottom: 1px solid $grey;
+
+    &:nth-child(6) {
+      border-bottom: 0;
+    }
+  }
+}
+
+#how-does-this-work {
+  text-align: center;
+  padding: 0 0 15px 0;
+  button {
+    color: #777;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+
+    &:focus,
+    &:active,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.modal {
+  padding-right: 0 !important;
+
+  .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+
+    .modal-content {
+      height: auto;
+      min-height: 100%;
+      border-radius: 0;
+      background-color: $white;
+      padding: 15px;
+
+      .modal-header {
+        background-color: $blue;
+        color: $white;
+        border-radius: 10px;
+        border-bottom: 0;
+        padding: 15px;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        .close {
+          color: $white;
+          padding-top: 20px;
+          opacity: 1;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $black;
+    color: $white;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: $white;
+  }
+
+  #top {
+    .line {
+      .text {
+        font-weight: 100;
+      }
+    }
+  }
+
+  .large-header {
+    font-weight: 100;
+  }
+
+  .section-header {
+    font-weight: 100;
+  }
+
+  .times {
+    width: 100%;
+
+    .time-bit {
+      border-bottom: 1px solid $grey;
+    }
+  }
+
+  #how-does-this-work {
+    button {
+      font-weight: 100;
+    }
+  }
+
+  .modal {
+    .modal-dialog {
+      .modal-content {
+        background-color: $black;
+
+        .modal-header {
+          color: $white;
+
+          .close {
+            color: $white;
+          }
+        }
+
+        .modal-body {
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

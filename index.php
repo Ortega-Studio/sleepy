@@ -53,18 +53,24 @@
 
   <body>
     <div class="container">
-      <div id="sleep-times">
+      <div id="sleep-times">      
+        <div class="top row">
+          <div class="col-3 col-sm-4 line"><span></span></div>
+          <div class="col-6 col-sm-4 text">What Time Do You Have to Wake Up?</div>
+          <div class="col-3 col-sm-4 line"><span></span></div>
+        </div>
+        
+        <form id="sleep-time-value">
+          <input name="time" type="time" value="<?php print date('G:i', time()); ?>">
+          <input type="submit">
+        </form>
+        
+        <h3 class="section-header">Optimal Sleep Times Are</h3>
+        <div id="sleep-times-container">
+          <div></div>
+        </div>
+      </div>
       
-      <div class="top row">
-        <div class="col-3 col-sm-4 line"><span></span></div>
-        <div class="col-6 col-sm-4 text">What Time Do You Have to Wake Up?</div>
-        <div class="col-3 col-sm-4 line"><span></span></div>
-      </div>
-      <form>
-      <input type="time" value="<?php print date('G:i', time()); ?>">
-
-      </form>
-      </div>
       <div id="wake-times">
         <div class="top row">
           <div class="col-3 col-sm-4 line"><span></span></div>
@@ -72,10 +78,10 @@
           <div class="col-3 col-sm-4 line"><span></span></div>
         </div>
   
-        <h1 id="currenttime"></h1>
-        <h2 class="section-header">Optimal Wake Times Are</h2>
+        <h2 id="current-time" class="large-header"></h2>
+        <h3 class="section-header">Optimal Wake Times Are</h3>
         
-        <div id="timescontainer">
+        <div id="wake-times-container">
           <div></div>
         </div>
       </div>

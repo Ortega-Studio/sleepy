@@ -10,7 +10,7 @@
     "package.json",
     "Gruntfile.js"
   ],
-  "remotePath" : "\/home\/um_me\/um-me.com\/sleepy",
+  "remotePath" : "\/home\/um_me\/um-me.com\/sleepy\/beta",
   "server" : "Umbrella Media",
   "usesPublishing" : true
 }
