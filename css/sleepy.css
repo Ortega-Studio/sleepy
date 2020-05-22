@@ -2,9 +2,10 @@
 .carousel .carousel-inner .carousel-item {
   height: 650px;
   overflow: hidden;
+  padding: 0 5px;
 }
 
-/* line 9, scss/_carousel.scss */
+/* line 10, scss/_carousel.scss */
 .carousel .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -12,13 +13,13 @@
   background-color: #dbdbdb;
 }
 
-/* line 14, scss/_carousel.scss */
+/* line 15, scss/_carousel.scss */
 .carousel .carousel-indicators li.active {
   background-color: #3478f5;
 }
 
 @media (prefers-color-scheme: dark) {
-  /* line 24, scss/_carousel.scss */
+  /* line 25, scss/_carousel.scss */
   .carousel .carousel-indicators li {
     background-color: #dbdbdb;
   }
@@ -70,6 +71,17 @@ a:active {
 }
 
 /* line 19, scss/_global.scss */
+h4 {
+  margin-top: 20px;
+  color: #222;
+}
+
+/* line 23, scss/_global.scss */
+h4 i {
+  color: #3478f5;
+}
+
+/* line 28, scss/_global.scss */
 .large-header, #sleep-times form #sleep-time-value {
   font-size: 60px;
   line-height: 60px;
@@ -80,7 +92,7 @@ a:active {
   padding: 0;
 }
 
-/* line 29, scss/_global.scss */
+/* line 38, scss/_global.scss */
 .section-header {
   font-size: 16px;
   line-height: 16px;
@@ -96,20 +108,19 @@ a:active {
   border-radius: 10px;
 }
 
-/* line 44, scss/_global.scss */
+/* line 53, scss/_global.scss */
 .top {
   margin: 15px 0 0 0;
   width: 100%;
 }
 
-/* line 48, scss/_global.scss */
+/* line 57, scss/_global.scss */
 .top .line {
   align-self: center;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0 5px;
 }
 
-/* line 52, scss/_global.scss */
+/* line 60, scss/_global.scss */
 .top .line:before {
   content: " ";
   height: 0px;
@@ -117,7 +128,7 @@ a:active {
   display: block;
 }
 
-/* line 60, scss/_global.scss */
+/* line 68, scss/_global.scss */
 .top .text {
   text-align: center;
   text-transform: uppercase;
@@ -128,12 +139,12 @@ a:active {
   font-weight: 300;
 }
 
-/* line 71, scss/_global.scss */
+/* line 79, scss/_global.scss */
 .times {
   width: 100%;
 }
 
-/* line 74, scss/_global.scss */
+/* line 82, scss/_global.scss */
 .times .time-bit {
   font-size: 30px;
   text-align: center;
@@ -141,43 +152,51 @@ a:active {
   padding: 10px;
   border-bottom: 1px solid #dbdbdb;
   min-height: 66px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
-/* line 83, scss/_global.scss */
+/* line 91, scss/_global.scss */
 .times .time-bit:last-child {
   border-bottom: 0;
 }
 
-/* line 88, scss/_global.scss */
+/* line 96, scss/_global.scss */
 .times .time-bit-empty {
   border-bottom: 1px solid #fff;
 }
 
-/* line 93, scss/_global.scss */
+/* line 101, scss/_global.scss */
 #how-does-this-work {
   text-align: center;
   padding: 0 0 15px 0;
+  font-weight: 300;
 }
 
-/* line 96, scss/_global.scss */
+/* line 105, scss/_global.scss */
 #how-does-this-work button {
   color: #777;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
+  -webkit-appearance: none;
 }
 
-/* line 101, scss/_global.scss */
+/* line 111, scss/_global.scss */
 #how-does-this-work button:focus, #how-does-this-work button:active, #how-does-this-work button:hover {
   text-decoration: none;
+  outline: none;
 }
 
-/* line 109, scss/_global.scss */
+/* line 118, scss/_global.scss */
+#how-does-this-work button i {
+  color: #3478f5;
+}
+
+/* line 124, scss/_global.scss */
 .modal {
   padding-right: 0 !important;
 }
 
-/* line 112, scss/_global.scss */
+/* line 127, scss/_global.scss */
 .modal .modal-dialog {
   width: 100%;
   height: 100%;
@@ -185,16 +204,17 @@ a:active {
   max-width: 100%;
 }
 
-/* line 118, scss/_global.scss */
+/* line 133, scss/_global.scss */
 .modal .modal-dialog .modal-content {
   height: auto;
   min-height: 100%;
   border-radius: 0;
   background-color: #fff;
   padding: 15px;
+  border: 0;
 }
 
-/* line 125, scss/_global.scss */
+/* line 141, scss/_global.scss */
 .modal .modal-dialog .modal-content .modal-header {
   background-color: #3478f5;
   color: #fff;
@@ -206,7 +226,7 @@ a:active {
   text-transform: uppercase;
 }
 
-/* line 135, scss/_global.scss */
+/* line 151, scss/_global.scss */
 .modal .modal-dialog .modal-content .modal-header .close {
   color: #fff;
   padding-top: 20px;
@@ -214,66 +234,88 @@ a:active {
   font-size: 15px;
 }
 
+/* line 162, scss/_global.scss */
+#um {
+  border-top: 1px solid #dbdbdb;
+  margin-top: 50px;
+  padding-top: 15px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* line 168, scss/_global.scss */
+#um i {
+  color: #db565b;
+}
+
 @media (prefers-color-scheme: dark) {
-  /* line 147, scss/_global.scss */
+  /* line 174, scss/_global.scss */
   body {
     background-color: #000;
     color: #fff;
   }
-  /* line 152, scss/_global.scss */
+  /* line 179, scss/_global.scss */
   a,
   a:hover,
   a:visited,
   a:active {
     color: #fff;
   }
-  /* line 161, scss/_global.scss */
+  /* line 186, scss/_global.scss */
+  h4 {
+    color: #fff;
+  }
+  /* line 192, scss/_global.scss */
   .top .line:before {
     border-bottom: 1px solid #222;
   }
-  /* line 166, scss/_global.scss */
+  /* line 197, scss/_global.scss */
   .top .text {
     font-weight: 200;
   }
-  /* line 171, scss/_global.scss */
+  /* line 202, scss/_global.scss */
   .large-header, #sleep-times form #sleep-time-value {
     font-weight: 200;
   }
-  /* line 175, scss/_global.scss */
+  /* line 206, scss/_global.scss */
   .section-header {
     font-weight: 100;
   }
-  /* line 179, scss/_global.scss */
+  /* line 210, scss/_global.scss */
   .times {
     width: 100%;
   }
-  /* line 182, scss/_global.scss */
+  /* line 213, scss/_global.scss */
   .times .time-bit {
     border-bottom: 1px solid #222;
   }
-  /* line 186, scss/_global.scss */
+  /* line 217, scss/_global.scss */
   .times .time-bit-empty {
     border-bottom: 1px solid #000;
   }
-  /* line 192, scss/_global.scss */
+  /* line 223, scss/_global.scss */
   #how-does-this-work button {
     font-weight: 100;
   }
-  /* line 199, scss/_global.scss */
+  /* line 230, scss/_global.scss */
   .modal .modal-dialog .modal-content {
     background-color: #000;
   }
-  /* line 202, scss/_global.scss */
+  /* line 233, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-header {
     color: #fff;
   }
-  /* line 205, scss/_global.scss */
+  /* line 236, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-header .close {
     color: #fff;
   }
-  /* line 211, scss/_global.scss */
+  /* line 242, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-body a {
     color: #fff;
+  }
+  /* line 250, scss/_global.scss */
+  #um {
+    border-top: 1px solid #222;
   }
 }
 

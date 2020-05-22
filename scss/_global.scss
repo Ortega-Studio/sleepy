@@ -16,6 +16,15 @@ a:active {
   text-decoration: none !important;
 }
 
+h4 {
+  margin-top: 20px;
+  color: $grey;
+
+  i {
+    color: $blue;
+  }
+}
+
 .large-header {
   font-size: 60px;
   line-height: 60px;
@@ -47,8 +56,7 @@ a:active {
 
   .line {
     align-self: center;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 5px;
     &:before {
       content: " ";
       height: 0px;
@@ -78,7 +86,7 @@ a:active {
     padding: 10px;
     border-bottom: 1px solid $light-grey;
     min-height: 66px;
-    font-weight: 300;
+    font-weight: 200;
 
     &:last-child() {
       border-bottom: 0;
@@ -93,15 +101,22 @@ a:active {
 #how-does-this-work {
   text-align: center;
   padding: 0 0 15px 0;
+  font-weight: 300;
   button {
     color: #777;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
+    -webkit-appearance: none;
 
     &:focus,
     &:active,
     &:hover {
       text-decoration: none;
+      outline: none;
+    }
+
+    i {
+      color: $blue;
     }
   }
 }
@@ -121,6 +136,7 @@ a:active {
       border-radius: 0;
       background-color: $white;
       padding: 15px;
+      border: 0;
 
       .modal-header {
         background-color: $blue;
@@ -143,6 +159,17 @@ a:active {
   }
 }
 
+#um {
+  border-top: 1px solid $light-grey;
+  margin-top: 50px;
+  padding-top: 15px;
+  font-size: 12px;
+  text-align: center;
+  i {
+    color: $red;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: $black;
@@ -153,6 +180,10 @@ a:active {
   a:hover,
   a:visited,
   a:active {
+    color: $white;
+  }
+
+  h4 {
     color: $white;
   }
 
@@ -214,5 +245,9 @@ a:active {
         }
       }
     }
+  }
+
+  #um {
+    border-top: 1px solid $grey;
   }
 }

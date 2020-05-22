@@ -1,3 +1,8 @@
+<?php
+  header('Cache-Control: no-cache, no-store, must-revalidate');
+  header('Pragma: no-cache');
+  header('Expires: 0');
+?>
 <!DOCTYPE html>
 <html class="" lang="en" dir="ltr">
   <head>
@@ -20,6 +25,9 @@
     <meta http-equiv="cleartype" content="on">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   
     <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-180x180.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -112,29 +120,33 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-title" id="exampleModalLabel">About Sleepy</div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <div class="modal-title" id="exampleModalLabel"><i class="far fa-snooze"></i> About Sleepy</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <i class="fal fa-times"></i>
             </button>
           </div>
           <div class="modal-body">
+            <h4><i class="fal fa-lightbulb-on"></i> The Idea</h4>
             <p>
               Waking up during a sleep cycle can leave you feeling groggy.
               Sleepy provides you time options to help you to wake up between
               sleep cycles.
             </p>
-            <p>A good night's sleep consists of 5-6 complete sleep cycles.</p>
+            <ul>
+              <li>A good night's sleep consists of 5-6 complete sleep cycles.</li>
+              <li>It takes about 15 minutes to fall asleep. Don't worry, we've accounted for that in our time estimates.</li>
+            </ul>
             
-            <p>To enjoy a full screen experience and ease of use save this web app to your device's home screen.</p>
-            
-            <p>Sleepy was created by <a href="http://umbrella.media">Umbrella Media</a> in Austin Texas.</p>
+            <h4><i class="fal fa-head-side-brain"></i> Tips</h4>
+            <ul>
+              <li>Use the default calculator to see what the best times are for you to wake up, based on the current time.</li>
+              <li>Use the calculator on the second page to calculate bed times based on your wake time.</li>
+              <li>To enjoy a full screen experience and ease of use save this web app to your device's home screen.</li>
+            </ul>
 
-            <p>😴💤 Sweet dreams!</p>
+            <p>Sweet dreams, Sleepy Heads. 😴💤</p>
+            
+            <p id="um"><i class="fas fa-heart"></i> &nbsp;<a href="http://umbrella.media">Created with love by Umbrella Media in Austin Texas.</a></p>
           </div>
         </div>
       </div>
