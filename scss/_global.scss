@@ -4,6 +4,7 @@ body {
   color: $black;
   margin: 0;
   padding: 0;
+  font-weight: 300;
 }
 
 a,
@@ -17,9 +18,10 @@ a:active {
 
 .large-header {
   font-size: 60px;
+  line-height: 60px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 400;
+  font-weight: 200;
   margin: 20px 0 30px 0;
   padding: 0;
 }
@@ -30,7 +32,7 @@ a:active {
   text-align: center;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   background: $blue;
   color: $white;
   padding: 15px;
@@ -40,15 +42,17 @@ a:active {
 }
 
 .top {
-  margin: 30px 0 0 0;
+  margin: 15px 0 0 0;
   width: 100%;
 
   .line {
     align-self: center;
+    padding-left: 0;
+    padding-right: 0;
     &:before {
       content: " ";
       height: 0px;
-      border-bottom: 1px solid $grey;
+      border-bottom: 1px solid $light-grey;
       display: block;
     }
   }
@@ -60,7 +64,7 @@ a:active {
     line-height: 18px;
     font-family: "Roboto", sans-serif;
     vertical-align: middle;
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 
@@ -72,10 +76,11 @@ a:active {
     text-align: center;
     vertical-align: center;
     padding: 10px;
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid $light-grey;
     min-height: 66px;
+    font-weight: 300;
 
-    &:nth-child(6) {
+    &:last-child() {
       border-bottom: 0;
     }
   }
@@ -90,7 +95,7 @@ a:active {
   padding: 0 0 15px 0;
   button {
     color: #777;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Roboto", sans-serif;
 
     &:focus,
@@ -151,16 +156,20 @@ a:active {
     color: $white;
   }
 
-  #top {
+  .top {
     .line {
-      .text {
-        font-weight: 100;
+      &:before {
+        border-bottom: 1px solid $grey;
       }
+    }
+
+    .text {
+      font-weight: 200;
     }
   }
 
   .large-header {
-    font-weight: 100;
+    font-weight: 200;
   }
 
   .section-header {

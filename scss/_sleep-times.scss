@@ -2,6 +2,30 @@
   form {
     #sleep-time-value {
       @extend .large-header;
+      max-width: 100%;
+      width: 100%;
+      border: 0;
+      height: 60px;
+      margin: 13px auto 37px auto !important;
+      text-align: center !important;
+      -webkit-appearance: none;
+      display: inline-block;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #sleep-times {
+    form {
+      #sleep-time-value {
+        background-color: $black;
+        color: $white;
+      }
     }
   }
 }

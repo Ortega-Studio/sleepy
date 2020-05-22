@@ -1,0 +1,29 @@
+.carousel {
+  .carousel-inner {
+    .carousel-item {
+      height: 650px;
+      overflow: hidden;
+    }
+  }
+  .carousel-indicators {
+    li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $light-grey;
+      &.active {
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .carousel {
+    .carousel-indicators {
+      li {
+        background-color: $light-grey;
+      }
+    }
+  }
+}

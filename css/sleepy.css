@@ -1,3 +1,54 @@
+/* line 3, scss/_carousel.scss */
+.carousel .carousel-inner .carousel-item {
+  height: 650px;
+  overflow: hidden;
+}
+
+/* line 9, scss/_carousel.scss */
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+}
+
+/* line 14, scss/_carousel.scss */
+.carousel .carousel-indicators li.active {
+  background-color: #3478f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* line 24, scss/_carousel.scss */
+  .carousel .carousel-indicators li {
+    background-color: #dbdbdb;
+  }
+}
+
+/* line 3, scss/_sleep-times.scss */
+#sleep-times form #sleep-time-value {
+  max-width: 100%;
+  width: 100%;
+  border: 0;
+  height: 60px;
+  margin: 13px auto 37px auto !important;
+  text-align: center !important;
+  -webkit-appearance: none;
+  display: inline-block;
+}
+
+/* line 14, scss/_sleep-times.scss */
+#sleep-times form #sleep-time-value:active, #sleep-times form #sleep-time-value:focus {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* line 25, scss/_sleep-times.scss */
+  #sleep-times form #sleep-time-value {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
 /* line 1, scss/_global.scss */
 body {
   font-family: "Roboto", sans-serif;
@@ -5,9 +56,10 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
+  font-weight: 300;
 }
 
-/* line 9, scss/_global.scss */
+/* line 10, scss/_global.scss */
 a,
 a:link,
 a:hover,
@@ -17,25 +69,26 @@ a:active {
   text-decoration: none !important;
 }
 
-/* line 18, scss/_global.scss */
+/* line 19, scss/_global.scss */
 .large-header, #sleep-times form #sleep-time-value {
   font-size: 60px;
+  line-height: 60px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 400;
+  font-weight: 200;
   margin: 20px 0 30px 0;
   padding: 0;
 }
 
-/* line 27, scss/_global.scss */
+/* line 29, scss/_global.scss */
 .section-header {
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 400;
-  background: #185acb;
+  font-weight: 300;
+  background: #3478f5;
   color: #fff;
   padding: 15px;
   font-family: "Roboto", sans-serif;
@@ -43,26 +96,28 @@ a:active {
   border-radius: 10px;
 }
 
-/* line 42, scss/_global.scss */
+/* line 44, scss/_global.scss */
 .top {
-  margin: 30px 0 0 0;
+  margin: 15px 0 0 0;
   width: 100%;
 }
 
-/* line 46, scss/_global.scss */
+/* line 48, scss/_global.scss */
 .top .line {
   align-self: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/* line 48, scss/_global.scss */
+/* line 52, scss/_global.scss */
 .top .line:before {
   content: " ";
   height: 0px;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #dbdbdb;
   display: block;
 }
 
-/* line 56, scss/_global.scss */
+/* line 60, scss/_global.scss */
 .top .text {
   text-align: center;
   text-transform: uppercase;
@@ -70,58 +125,59 @@ a:active {
   line-height: 18px;
   font-family: "Roboto", sans-serif;
   vertical-align: middle;
-  font-weight: 400;
+  font-weight: 300;
 }
 
-/* line 67, scss/_global.scss */
+/* line 71, scss/_global.scss */
 .times {
   width: 100%;
 }
 
-/* line 70, scss/_global.scss */
+/* line 74, scss/_global.scss */
 .times .time-bit {
   font-size: 30px;
   text-align: center;
   vertical-align: center;
   padding: 10px;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #dbdbdb;
   min-height: 66px;
-}
-
-/* line 78, scss/_global.scss */
-.times .time-bit:nth-child(6) {
-  border-bottom: 0;
+  font-weight: 300;
 }
 
 /* line 83, scss/_global.scss */
+.times .time-bit:last-child {
+  border-bottom: 0;
+}
+
+/* line 88, scss/_global.scss */
 .times .time-bit-empty {
   border-bottom: 1px solid #fff;
 }
 
-/* line 88, scss/_global.scss */
+/* line 93, scss/_global.scss */
 #how-does-this-work {
   text-align: center;
   padding: 0 0 15px 0;
 }
 
-/* line 91, scss/_global.scss */
+/* line 96, scss/_global.scss */
 #how-does-this-work button {
   color: #777;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
 
-/* line 96, scss/_global.scss */
+/* line 101, scss/_global.scss */
 #how-does-this-work button:focus, #how-does-this-work button:active, #how-does-this-work button:hover {
   text-decoration: none;
 }
 
-/* line 104, scss/_global.scss */
+/* line 109, scss/_global.scss */
 .modal {
   padding-right: 0 !important;
 }
 
-/* line 107, scss/_global.scss */
+/* line 112, scss/_global.scss */
 .modal .modal-dialog {
   width: 100%;
   height: 100%;
@@ -129,7 +185,7 @@ a:active {
   max-width: 100%;
 }
 
-/* line 113, scss/_global.scss */
+/* line 118, scss/_global.scss */
 .modal .modal-dialog .modal-content {
   height: auto;
   min-height: 100%;
@@ -138,9 +194,9 @@ a:active {
   padding: 15px;
 }
 
-/* line 120, scss/_global.scss */
+/* line 125, scss/_global.scss */
 .modal .modal-dialog .modal-content .modal-header {
-  background-color: #185acb;
+  background-color: #3478f5;
   color: #fff;
   border-radius: 10px;
   border-bottom: 0;
@@ -150,7 +206,7 @@ a:active {
   text-transform: uppercase;
 }
 
-/* line 130, scss/_global.scss */
+/* line 135, scss/_global.scss */
 .modal .modal-dialog .modal-content .modal-header .close {
   color: #fff;
   padding-top: 20px;
@@ -159,59 +215,63 @@ a:active {
 }
 
 @media (prefers-color-scheme: dark) {
-  /* line 142, scss/_global.scss */
+  /* line 147, scss/_global.scss */
   body {
     background-color: #000;
     color: #fff;
   }
-  /* line 147, scss/_global.scss */
+  /* line 152, scss/_global.scss */
   a,
   a:hover,
   a:visited,
   a:active {
     color: #fff;
   }
-  /* line 156, scss/_global.scss */
-  #top .line .text {
-    font-weight: 100;
-  }
-  /* line 162, scss/_global.scss */
-  .large-header, #sleep-times form #sleep-time-value {
-    font-weight: 100;
+  /* line 161, scss/_global.scss */
+  .top .line:before {
+    border-bottom: 1px solid #222;
   }
   /* line 166, scss/_global.scss */
+  .top .text {
+    font-weight: 200;
+  }
+  /* line 171, scss/_global.scss */
+  .large-header, #sleep-times form #sleep-time-value {
+    font-weight: 200;
+  }
+  /* line 175, scss/_global.scss */
   .section-header {
     font-weight: 100;
   }
-  /* line 170, scss/_global.scss */
+  /* line 179, scss/_global.scss */
   .times {
     width: 100%;
   }
-  /* line 173, scss/_global.scss */
+  /* line 182, scss/_global.scss */
   .times .time-bit {
     border-bottom: 1px solid #222;
   }
-  /* line 177, scss/_global.scss */
+  /* line 186, scss/_global.scss */
   .times .time-bit-empty {
     border-bottom: 1px solid #000;
   }
-  /* line 183, scss/_global.scss */
+  /* line 192, scss/_global.scss */
   #how-does-this-work button {
     font-weight: 100;
   }
-  /* line 190, scss/_global.scss */
+  /* line 199, scss/_global.scss */
   .modal .modal-dialog .modal-content {
     background-color: #000;
   }
-  /* line 193, scss/_global.scss */
+  /* line 202, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-header {
     color: #fff;
   }
-  /* line 196, scss/_global.scss */
+  /* line 205, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-header .close {
     color: #fff;
   }
-  /* line 202, scss/_global.scss */
+  /* line 211, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-body a {
     color: #fff;
   }

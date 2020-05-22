@@ -1,9 +1,10 @@
 $black: #000;
 $grey: #222;
-$light-grey: #aaa;
+$light-grey: #dbdbdb;
 $white: #fff;
-$blue: #185acb;
+$blue: #3478f5;
 
+@import "carousel";
 @import "wake-times";
 @import "sleep-times";
 @import "global";
