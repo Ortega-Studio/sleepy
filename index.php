@@ -48,42 +48,59 @@
       src="https://kit.fontawesome.com/d90e0198e0.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="js/sleepy.js?v=<?php print rand(); ?>"></script>
+    <script type="text/javascript" src="js/sleep-times.js?v=<?php print rand(); ?>"></script>
+    <script type="text/javascript" src="js/wake-times.js?v=<?php print rand(); ?>"></script>
   </head>
 
   <body>
     <div class="container">
-      <div id="sleep-times">      
-        <div class="top row">
-          <div class="col-3 col-sm-4 line"><span></span></div>
-          <div class="col-6 col-sm-4 text">What Time Do You Have to Wake Up?</div>
-          <div class="col-3 col-sm-4 line"><span></span></div>
-        </div>
-        
-        <form id="sleep-time-value">
-          <input name="time" type="time" value="<?php print date('G:i', time()); ?>">
-          <input type="submit">
-        </form>
-        
-        <h3 class="section-header">Optimal Sleep Times Are</h3>
-        <div id="sleep-times-container">
-          <div></div>
-        </div>
-      </div>
+    <div id="sleepypages" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+      <ol class="carousel-indicators">
+        <li data-target="#sleepypages" data-slide-to="0" class="active"></li>
+        <li data-target="#sleepypages" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div id="wake-times">
+            <div class="top row">
+              <div class="col-3 col-sm-4 line"><span></span></div>
+              <div class="col-6 col-sm-4 text">It is currently</div>
+              <div class="col-3 col-sm-4 line"><span></span></div>
+            </div>
       
-      <div id="wake-times">
-        <div class="top row">
-          <div class="col-3 col-sm-4 line"><span></span></div>
-          <div class="col-6 col-sm-4 text">It is currently</div>
-          <div class="col-3 col-sm-4 line"><span></span></div>
+            <h2 id="current-time" class="large-header"></h2>
+            <h3 class="section-header">Optimal Wake Times Are</h3>
+            
+            <div id="wake-times-container">
+              <div class="times">
+                <div class="time-bit time-bit-empty"></div>
+                <div class="time-bit time-bit-empty"></div>
+                <div class="time-bit time-bit-empty"></div>
+                <div class="time-bit time-bit-empty"></div>
+              </div>
+            </div>
+          </div>
         </div>
-  
-        <h2 id="current-time" class="large-header"></h2>
-        <h3 class="section-header">Optimal Wake Times Are</h3>
-        
-        <div id="wake-times-container">
-          <div></div>
+        <!-- End Wake Times -->
+        <div class="carousel-item">
+          <div id="sleep-times">      
+            <div class="top row">
+              <div class="col-3 col-sm-4 line"><span></span></div>
+              <div class="col-6 col-sm-4 text">I have to wake up at</div>
+              <div class="col-3 col-sm-4 line"><span></span></div>
+            </div>
+            
+            <form>
+              <input name="time" id="sleep-time-value" type="time" value="<?php print date('G:i', time()); ?>">
+            </form>
+            
+            <h3 class="section-header">You Should Go to Sleep at one of these times</h3>
+            <div id="sleep-times-container">
+              <div></div>
+            </div>
+          </div>
         </div>
+        <!-- End Sleep Times -->        
       </div>
       <div id="how-does-this-work">
         <button

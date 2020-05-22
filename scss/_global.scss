@@ -78,6 +78,10 @@ a:active {
       border-bottom: 0;
     }
   }
+
+  .time-bit-empty {
+    border-bottom: 1px solid $white;
+  }
 }
 
 #how-does-this-work {
@@ -167,6 +171,10 @@ a:active {
 
     .time-bit {
       border-bottom: 1px solid $grey;
+    }
+
+    .time-bit-empty {
+      border-bottom: 1px solid $black;
     }
   }
 
