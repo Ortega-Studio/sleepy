@@ -73,10 +73,7 @@
             
             <div id="wake-times-container">
               <div class="times">
-                <div class="time-bit time-bit-empty"></div>
-                <div class="time-bit time-bit-empty"></div>
-                <div class="time-bit time-bit-empty"></div>
-                <div class="time-bit time-bit-empty"></div>
+                <div></div>
               </div>
             </div>
           </div>
@@ -96,7 +93,14 @@
             
             <h3 class="section-header">You Should Go to Sleep at one of these times</h3>
             <div id="sleep-times-container">
-              <div></div>
+              <div class="times">
+                <div class="time-bit time-bit-empty"></div>
+                <div class="time-bit time-bit-empty"></div>
+                <div class="time-bit time-bit-empty"></div>
+                <div class="time-bit time-bit-empty"></div>
+                <div class="time-bit time-bit-empty"></div>
+                <div class="time-bit time-bit-empty"></div>
+              </div>
             </div>
           </div>
         </div>

@@ -122,7 +122,9 @@ $(document).ready(function() {
       txt = txt + times[i];
     }
 
-    txt = txt + "</div>";
+    txt =
+      txt +
+      '<div class="time-bit time-bit-empty"></div><div class="time-bit time-bit-empty"></div></div>';
 
     $("#sleep-times-container").html(txt);
     $("#sleep-times-container").fadeIn("slow");
