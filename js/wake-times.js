@@ -194,13 +194,17 @@ function currenttime() {
   var gd = new Date();
   var minutes = gd.getMinutes();
   var hours = gd.getHours();
-
+  console.log(gd);
   if (hours == 0) {
     hours = 12;
   }
 
   if (hours > 12) {
     hours = hours - 12;
+    m = "PM";
+  }
+
+  if (hours == 12) {
     m = "PM";
   }
 
