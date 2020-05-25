@@ -1,5 +1,11 @@
 {
   "identifier" : "F54A4822-3CC5-4881-AA12-970BC55A6832",
+  "ignoredFilePatterns" : [
+    "node_modules",
+    "package-lock.json",
+    "package.json",
+    "scss"
+  ],
   "remotePath" : "\/home\/sleepyapp\/sleepyapp.co",
   "server" : "Sleepy",
   "usesPublishing" : true

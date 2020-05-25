@@ -25,9 +25,9 @@
     <meta http-equiv="cleartype" content="on">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
   
     <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-180x180.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -43,6 +43,7 @@
   </head>
 
   <body>
+
     <div class="container">
     <div id="sleepypages" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="false" data-touch="true">
       <div class="carousel-inner">
@@ -74,7 +75,7 @@
             </div>
             
             <form>
-              <input name="time" id="sleep-time-value" type="time" value="<?php print date('G:i', time()); ?>">
+              <input name="time" id="sleep-time-value" type="time" value="7:00" placeholder="7:00">
             </form>
             
             <h3 class="section-header">Optimal Bed Times Are</h3>
