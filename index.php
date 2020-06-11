@@ -78,7 +78,7 @@
             </div>
             
             <form>
-              <input name="time" id="sleep-time-value" type="time" value="7:00" placeholder="7:00">
+              <input name="time" id="sleep-time-value" type="time" value="07:00" placeholder="07:00">
             </form>
             
             <h3 class="section-header">Optimal Bed Times Are</h3>
@@ -149,6 +149,7 @@
             <p>Sweet dreams, Sleepy Heads. 😴💤</p>
             
             <p id="um"><i class="fas fa-heart"></i> &nbsp;<a href="http://umbrella.media">Created with love by Umbrella Media in Austin Texas.</a></p>
+            <p id="version">version 2.1.5</p>
           </div>
         </div>
       </div>

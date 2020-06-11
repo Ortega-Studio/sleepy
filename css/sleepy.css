@@ -282,72 +282,79 @@ h4 i {
   color: #db565b;
 }
 
+/* line 173, scss/_global.scss */
+#version {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
 @media (prefers-color-scheme: dark) {
-  /* line 174, scss/_global.scss */
+  /* line 180, scss/_global.scss */
   body {
     background-color: #000;
     color: #fff;
   }
-  /* line 179, scss/_global.scss */
+  /* line 185, scss/_global.scss */
   a,
   a:hover,
   a:visited,
   a:active {
     color: #fff;
   }
-  /* line 186, scss/_global.scss */
+  /* line 192, scss/_global.scss */
   h4 {
     color: #fff;
   }
-  /* line 192, scss/_global.scss */
+  /* line 198, scss/_global.scss */
   .top .line:before {
     border-bottom: 1px solid #222;
   }
-  /* line 197, scss/_global.scss */
+  /* line 203, scss/_global.scss */
   .top .text {
     font-weight: 200;
   }
-  /* line 202, scss/_global.scss */
+  /* line 208, scss/_global.scss */
   .large-header, #sleep-times form #sleep-time-value {
     font-weight: 200;
   }
-  /* line 206, scss/_global.scss */
+  /* line 212, scss/_global.scss */
   .section-header {
     font-weight: 100;
   }
-  /* line 210, scss/_global.scss */
+  /* line 216, scss/_global.scss */
   .times {
     width: 100%;
   }
-  /* line 213, scss/_global.scss */
+  /* line 219, scss/_global.scss */
   .times .time-bit {
     border-bottom: 1px solid #222;
   }
-  /* line 217, scss/_global.scss */
+  /* line 223, scss/_global.scss */
   .times .time-bit-empty {
     border-bottom: 1px solid #000;
   }
-  /* line 223, scss/_global.scss */
+  /* line 229, scss/_global.scss */
   #how-does-this-work button {
     font-weight: 100;
   }
-  /* line 230, scss/_global.scss */
+  /* line 236, scss/_global.scss */
   .modal .modal-dialog .modal-content {
     background-color: #000;
   }
-  /* line 233, scss/_global.scss */
+  /* line 239, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-header {
     color: #fff;
   }
-  /* line 236, scss/_global.scss */
+  /* line 242, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-header .close {
     color: #fff;
   }
-  /* line 242, scss/_global.scss */
+  /* line 248, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-body a {
     color: #fff;
   }
-  /* line 250, scss/_global.scss */
+  /* line 256, scss/_global.scss */
   #um {
     border-top: 1px solid #222;
   }
