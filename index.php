@@ -32,22 +32,25 @@
     <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-180x180.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css?v=<?php print rand(); ?>">
     <link type="text/css" href="css/sleepy.css?v=<?php print rand(); ?>" rel="stylesheet" />		
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d90e0198e0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js?v=<?php print rand(); ?>"></script>
+    <script type="text/javascript" src="js/global.js?v=<?php print rand(); ?>"></script>
     <script type="text/javascript" src="js/sleep-times.js?v=<?php print rand(); ?>"></script>
     <script type="text/javascript" src="js/wake-times.js?v=<?php print rand(); ?>"></script>
   </head>
 
   <body>
 
-    <div class="container">
-    <div id="sleepypages" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="false" data-touch="true">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+  <div class="container">
+    <div id="sleepypages" class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
           <div id="wake-times">
             <div class="top row">
               <div class="col-3 col-sm-4 line"><span></span></div>
@@ -66,7 +69,7 @@
           </div>
         </div>
         <!-- End Wake Times -->
-        <div class="carousel-item ">
+        <div class="swiper-slide">
           <div id="sleep-times">      
             <div class="top row">
               <div class="col-2 col-sm-4 line"><span></span></div>
@@ -92,12 +95,10 @@
           </div>
         </div>
         <!-- End Sleep Times -->    
-        
-        <ol class="carousel-indicators">
-          <li data-target="#sleepypages" data-slide-to="0" class="active"></li>
-          <li data-target="#sleepypages" data-slide-to="1"></li>
-        </ol>
       </div>
+      
+      <div class="swiper-pagination"></div>
+      
       <div id="how-does-this-work">
         <button
           type="button"
