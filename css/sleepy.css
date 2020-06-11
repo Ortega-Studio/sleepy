@@ -35,15 +35,16 @@
   margin-right: 2px;
   border-radius: 50%;
   background-color: #dbdbdb;
+  opacity: 1;
 }
 
-/* line 34, scss/_carousel.scss */
+/* line 35, scss/_carousel.scss */
 .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #3478f5;
 }
 
 @media (prefers-color-scheme: dark) {
-  /* line 44, scss/_carousel.scss */
+  /* line 45, scss/_carousel.scss */
   .swiper-container .swiper-pagination .swiper-pagination-bullet {
     background-color: #dbdbdb;
   }
