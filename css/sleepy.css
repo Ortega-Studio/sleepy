@@ -291,7 +291,7 @@ h4 i {
   color: #999;
 }
 
-@media (max-height: 666px) {
+@media (max-height: 567px) {
   /* line 181, scss/_global.scss */
   .large-header, #sleep-times form #sleep-time-value {
     font-size: 50px;

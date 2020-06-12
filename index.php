@@ -138,7 +138,7 @@
             <p>Sweet dreams, Sleepy Heads. 😴💤</p>
             
             <p id="um"><i class="fas fa-heart"></i> &nbsp;<a href="http://umbrella.media">Created with love by Umbrella Media in Austin Texas.</a></p>
-            <p id="version"><i class="fal fa-code"></i> version 2.1.5</p>
+            <p id="version"><i class="fal fa-code"></i> version 2.1.6</p>
           </div>
         </div>
       </div>
