@@ -39,7 +39,6 @@ h4 {
   font-size: 16px;
   line-height: 16px;
   text-align: center;
-  margin: 0;
   text-transform: uppercase;
   font-weight: 300;
   background: $blue;
@@ -68,7 +67,7 @@ h4 {
   .text {
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 18px;
     font-family: "Roboto", sans-serif;
     vertical-align: middle;
@@ -112,6 +111,7 @@ h4 {
     &:active,
     &:hover {
       text-decoration: none;
+      box-shadow: none;
       outline: none;
     }
 
@@ -174,6 +174,58 @@ h4 {
   margin-top: 5px;
   font-size: 12px;
   text-align: center;
+  color: $medium-grey;
+}
+
+@media (max-height: 666px) {
+  .large-header {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 15px 25px;
+  }
+
+  .swiper-container {
+    .swiper-slide {
+      height: 530px;
+    }
+  }
+
+  .section-header {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .times {
+    .time-bit {
+      font-size: 26px;
+      min-height: 60px;
+    }
+  }
+
+  .swiper-container .swiper-pagination {
+    bottom: 0;
+  }
+
+  .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  #how-does-this-work {
+    padding-bottom: 0;
+    button {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 345px) {
+  .top {
+    .text {
+      font-size: 14px;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {

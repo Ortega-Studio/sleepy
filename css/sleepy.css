@@ -23,7 +23,7 @@
 
 /* line 22, scss/_carousel.scss */
 .swiper-container .swiper-pagination {
-  bottom: 65px;
+  bottom: 25px;
   width: 100%;
 }
 
@@ -31,8 +31,8 @@
 .swiper-container .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 3px;
+  margin-right: 3px;
   border-radius: 50%;
   background-color: #dbdbdb;
   opacity: 1;
@@ -132,7 +132,6 @@ h4 i {
   font-size: 16px;
   line-height: 16px;
   text-align: center;
-  margin: 0;
   text-transform: uppercase;
   font-weight: 300;
   background: #3478f5;
@@ -143,19 +142,19 @@ h4 i {
   border-radius: 10px;
 }
 
-/* line 53, scss/_global.scss */
+/* line 52, scss/_global.scss */
 .top {
   margin: 15px 0 0 0;
   width: 100%;
 }
 
-/* line 57, scss/_global.scss */
+/* line 56, scss/_global.scss */
 .top .line {
   align-self: center;
   padding: 0 5px;
 }
 
-/* line 60, scss/_global.scss */
+/* line 59, scss/_global.scss */
 .top .line:before {
   content: " ";
   height: 0px;
@@ -163,23 +162,23 @@ h4 i {
   display: block;
 }
 
-/* line 68, scss/_global.scss */
+/* line 67, scss/_global.scss */
 .top .text {
   text-align: center;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   font-family: "Roboto", sans-serif;
   vertical-align: middle;
   font-weight: 300;
 }
 
-/* line 79, scss/_global.scss */
+/* line 78, scss/_global.scss */
 .times {
   width: 100%;
 }
 
-/* line 82, scss/_global.scss */
+/* line 81, scss/_global.scss */
 .times .time-bit {
   font-size: 30px;
   text-align: center;
@@ -190,24 +189,24 @@ h4 i {
   font-weight: 200;
 }
 
-/* line 91, scss/_global.scss */
+/* line 90, scss/_global.scss */
 .times .time-bit:last-child {
   border-bottom: 0;
 }
 
-/* line 96, scss/_global.scss */
+/* line 95, scss/_global.scss */
 .times .time-bit-empty {
   border-bottom: 1px solid #fff;
 }
 
-/* line 101, scss/_global.scss */
+/* line 100, scss/_global.scss */
 #how-does-this-work {
   text-align: center;
   padding: 0 0 15px 0;
   font-weight: 300;
 }
 
-/* line 105, scss/_global.scss */
+/* line 104, scss/_global.scss */
 #how-does-this-work button {
   color: #777;
   font-weight: 300;
@@ -215,9 +214,10 @@ h4 i {
   -webkit-appearance: none;
 }
 
-/* line 111, scss/_global.scss */
+/* line 110, scss/_global.scss */
 #how-does-this-work button:focus, #how-does-this-work button:active, #how-does-this-work button:hover {
   text-decoration: none;
+  box-shadow: none;
   outline: none;
 }
 
@@ -288,74 +288,123 @@ h4 i {
   margin-top: 5px;
   font-size: 12px;
   text-align: center;
+  color: #999;
+}
+
+@media (max-height: 666px) {
+  /* line 181, scss/_global.scss */
+  .large-header, #sleep-times form #sleep-time-value {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 15px 25px;
+  }
+  /* line 188, scss/_global.scss */
+  .swiper-container .swiper-slide {
+    height: 530px;
+  }
+  /* line 193, scss/_global.scss */
+  .section-header {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  /* line 200, scss/_global.scss */
+  .times .time-bit {
+    font-size: 26px;
+    min-height: 60px;
+  }
+  /* line 206, scss/_global.scss */
+  .swiper-container .swiper-pagination {
+    bottom: 0;
+  }
+  /* line 210, scss/_global.scss */
+  .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+  /* line 215, scss/_global.scss */
+  #how-does-this-work {
+    padding-bottom: 0;
+  }
+  /* line 217, scss/_global.scss */
+  #how-does-this-work button {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 345px) {
+  /* line 225, scss/_global.scss */
+  .top .text {
+    font-size: 14px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  /* line 180, scss/_global.scss */
+  /* line 232, scss/_global.scss */
   body {
     background-color: #000;
     color: #fff;
   }
-  /* line 185, scss/_global.scss */
+  /* line 237, scss/_global.scss */
   a,
   a:hover,
   a:visited,
   a:active {
     color: #fff;
   }
-  /* line 192, scss/_global.scss */
+  /* line 244, scss/_global.scss */
   h4 {
     color: #fff;
   }
-  /* line 198, scss/_global.scss */
+  /* line 250, scss/_global.scss */
   .top .line:before {
     border-bottom: 1px solid #222;
   }
-  /* line 203, scss/_global.scss */
+  /* line 255, scss/_global.scss */
   .top .text {
     font-weight: 200;
   }
-  /* line 208, scss/_global.scss */
+  /* line 260, scss/_global.scss */
   .large-header, #sleep-times form #sleep-time-value {
     font-weight: 200;
   }
-  /* line 212, scss/_global.scss */
+  /* line 264, scss/_global.scss */
   .section-header {
     font-weight: 100;
   }
-  /* line 216, scss/_global.scss */
+  /* line 268, scss/_global.scss */
   .times {
     width: 100%;
   }
-  /* line 219, scss/_global.scss */
+  /* line 271, scss/_global.scss */
   .times .time-bit {
     border-bottom: 1px solid #222;
   }
-  /* line 223, scss/_global.scss */
+  /* line 275, scss/_global.scss */
   .times .time-bit-empty {
     border-bottom: 1px solid #000;
   }
-  /* line 229, scss/_global.scss */
+  /* line 281, scss/_global.scss */
   #how-does-this-work button {
     font-weight: 100;
   }
-  /* line 236, scss/_global.scss */
+  /* line 288, scss/_global.scss */
   .modal .modal-dialog .modal-content {
     background-color: #000;
   }
-  /* line 239, scss/_global.scss */
+  /* line 291, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-header {
     color: #fff;
   }
-  /* line 242, scss/_global.scss */
+  /* line 294, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-header .close {
     color: #fff;
   }
-  /* line 248, scss/_global.scss */
+  /* line 300, scss/_global.scss */
   .modal .modal-dialog .modal-content .modal-body a {
     color: #fff;
   }
-  /* line 256, scss/_global.scss */
+  /* line 308, scss/_global.scss */
   #um {
     border-top: 1px solid #222;
   }

@@ -32,14 +32,14 @@
     <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-180x180.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css?v=<?php print rand(); ?>">
+    <link rel="stylesheet" href="node_modules/swiper/css/swiper.min.css?v=<?php print rand(); ?>">
     <link type="text/css" href="css/sleepy.css?v=<?php print rand(); ?>" rel="stylesheet" />		
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d90e0198e0.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js?v=<?php print rand(); ?>"></script>
+    <script src="node_modules/swiper/js/swiper.min.js?v=<?php print rand(); ?>"></script>
     <script type="text/javascript" src="js/global.js?v=<?php print rand(); ?>"></script>
     <script type="text/javascript" src="js/sleep-times.js?v=<?php print rand(); ?>"></script>
     <script type="text/javascript" src="js/wake-times.js?v=<?php print rand(); ?>"></script>
@@ -98,17 +98,6 @@
       </div>
       
       <div class="swiper-pagination"></div>
-      
-      <div id="how-does-this-work">
-        <button
-          type="button"
-          class="btn btn-link"
-          data-toggle="modal"
-          data-target="#about"
-        >
-          <i class="fal fa-info-circle"></i> How does Sleepy work?
-        </button>
-      </div>
     </div>
 
     <div
@@ -149,10 +138,21 @@
             <p>Sweet dreams, Sleepy Heads. 😴💤</p>
             
             <p id="um"><i class="fas fa-heart"></i> &nbsp;<a href="http://umbrella.media">Created with love by Umbrella Media in Austin Texas.</a></p>
-            <p id="version">version 2.1.5</p>
+            <p id="version"><i class="fal fa-code"></i> version 2.1.5</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+    <div id="how-does-this-work">
+      <button
+      type="button"
+      class="btn btn-link"
+      data-toggle="modal"
+      data-target="#about"
+      >
+      <i class="fal fa-question-circle"></i> How does Sleepy work?
+    </button>
+  </div>
   </body>
 </html>
